@@ -31,5 +31,10 @@ class TicTacToe
   @board[index] = char
 end
 
+def position_taken?(index)
+  @board[index] != " " && @board[index] != ""
+end
+
+
 
 end
