@@ -136,7 +136,7 @@ WIN_COMBINATIONS.each do | win_combination |
   end
 
 if won?
-  puts "Congratulations #{winner(board)}!"
+  puts "Congratulations #{winner(@board)}!"
 
 else draw?
   puts "Cat's Game!"
