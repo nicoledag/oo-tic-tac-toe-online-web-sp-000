@@ -124,6 +124,11 @@ WIN_COMBINATIONS.each do | win_combination |
     end
   end
 
+  def winner
+    if win_combination = won?
+    return  @board[win_combination.first]
+    end
+  end
 
 
 
