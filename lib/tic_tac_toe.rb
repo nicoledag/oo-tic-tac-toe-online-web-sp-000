@@ -124,9 +124,9 @@ WIN_COMBINATIONS.each do | win_combination |
     end
   end
 
-  def winner(board)
-  if win_combination = won?(board)
-  return  board[win_combination.first]
+  def winner
+  if win_combination = won?
+  return  [win_combination.first]
   end
 end
 
