@@ -116,6 +116,13 @@ WIN_COMBINATIONS.each do | win_combination |
   end
 
 
+  def over?
+    if won? || full? || draw?
+      return true
+    else
+      false
+    end
+  end
 
 
 
