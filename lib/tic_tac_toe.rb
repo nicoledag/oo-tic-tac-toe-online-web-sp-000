@@ -124,24 +124,23 @@ WIN_COMBINATIONS.each do | win_combination |
     end
   end
 
-  def winner
-    if win_combination = won?
-    return  win_combination.first
-    end
+  def winner(board)
+  if win_combination = won?(board)
+  return  board[win_combination.first]
+  end
+end
+
+def play(board)
+ until over?(board) == true
+  turn(board)
   end
 
-  def play
-   until over? == true
-    turn
-  end
+if won?(board)
+  puts "Congratulations #{winner(board)}!"
 
-if won?
-  puts "Congratulations #{winner(@board)}!"
-
-else draw?
+else draw?(board)
   puts "Cat's Game!"
 
  end
-end
 
 end
