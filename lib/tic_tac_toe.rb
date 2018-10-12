@@ -134,7 +134,6 @@ WIN_COMBINATIONS.each do | win_combination |
    until over? == true
     turn
   end
-end
 
 if won?
   puts "Congratulations #{winner(board)}!"
