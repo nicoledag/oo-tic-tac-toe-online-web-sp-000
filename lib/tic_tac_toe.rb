@@ -130,15 +130,15 @@ WIN_COMBINATIONS.each do | win_combination |
   end
 end
 
-def play(board)
- until over?(board) == true
-  turn(board)
+def play
+ until over? == true
+  turn
   end
 
-if won?(board)
-  puts "Congratulations #{winner(board)}!"
+if won?
+  puts "Congratulations #{winner}!"
 
-else draw?(board)
+else draw?
   puts "Cat's Game!"
 
  end
