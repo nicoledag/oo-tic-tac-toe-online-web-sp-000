@@ -103,5 +103,13 @@ WIN_COMBINATIONS.each do | win_combination |
     return false
   end
 
+    def full?
+    board.all? { |index| index == "X" || index == "O"  }
+  end
+
+
+
+
+
 
 end
