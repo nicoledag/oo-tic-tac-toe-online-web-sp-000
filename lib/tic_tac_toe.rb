@@ -130,6 +130,11 @@ WIN_COMBINATIONS.each do | win_combination |
     end
   end
 
+  def play
+   until over? == true
+    turn
+  end
+
 
 
 end
